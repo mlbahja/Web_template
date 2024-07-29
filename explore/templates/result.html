@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ASCII Art Result</title>
+</head>
+<body>
+    <pre>{{ . }}</pre>
+    <form action="/export" method="post">
+        <textarea name="ascii-art" style="display:none;">{{ . }}</textarea>
+        <button type="submit">Export as Text File</button>
+    </form>
+    <a href="/">Back to Home</a>
+</body>
+</html>
