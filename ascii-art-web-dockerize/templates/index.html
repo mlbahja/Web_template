@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>AsciiArt</title>
+	</head>
+	<body>
+		<form id="asciiForm" action="/ascii-art" method="post">
+            <label for="textInput">Text Input:</label>
+            <textarea id="textInput" name="textInput" required></textarea>
+            <br>
+    
+            <label for="bannerType">Select Banner Type:</label><br>
+            <input type="radio" id="standard" name="bannerType" value="standard" checked>
+            <label for="standard">standard</label><br>
+            <input type="radio" id="shadow" name="bannerType" value="shadow">
+            <label for="shadow">shadow</label><br>
+            <input type="radio" id="thinkertoy" name="bannerType" value="thinkertoy">
+            <label for="thinkertoy">thinkertoy</label><br>
+            <br>
+            <button type="submit">Generate ASCII Art</button>
+        </form>
+	</body>
+</html>
